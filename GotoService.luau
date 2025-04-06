@@ -1,8 +1,9 @@
 local Module = {}
+local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 function Module.Goto(sp, position)
-    local character = Player.Character
+    local character = Player.Character or Player.CharacterAdded:Wait()
     if not character or not character.PrimaryPart then return end
     if not character.HumanoidRootPart then return end
     local hrp = character.PrimaryPart
