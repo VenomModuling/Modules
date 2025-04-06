@@ -1,12 +1,9 @@
-# Modules README
-**We're going to talk about the modules:**
-
 # Data Service Module
 
 Este módulo fornece funcionalidades para gerar, enviar e recuperar chaves associadas a um jogador dentro de um jogo Roblox. As chaves são geradas aleatoriamente e podem ser enviadas para um servidor remoto, onde são armazenadas e recuperadas posteriormente.
 # Loadstring:
 ```lua
-local Module = 
+local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/VenomModuling/Modules/refs/heads/main/Universal/DataService.luau"))()
 ```
 ## Funcionalidades
 
