@@ -123,12 +123,12 @@ end
 function Module:Unban(name)
     print("[BAN SERVICE] Unban started for:", name)
 
+    -- Buscar a blacklist
     local success, resp = pcall(function()
-        local response = request({
+        return request({
             Url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist",
             Method = "GET"
         })
-        return response
     end)
 
     if success and resp and resp.Body then
@@ -139,6 +139,7 @@ function Module:Unban(name)
         return
     end
 
+    -- Decodificar o JSON
     local decodedData
     local successDecode, decodeError = pcall(function()
         decodedData = HttpService:JSONDecode(resp.Body)
@@ -149,6 +150,7 @@ function Module:Unban(name)
         return
     end
 
+    -- Procurar nome na blacklist
     local id
     local url
     local found = false
@@ -175,25 +177,39 @@ function Module:Unban(name)
         end
     end
 
+    -- Se não encontrou, encerrar
     if not found then
         warn("[BAN SERVICE] Name not found in blacklist:", name)
         return
     end
 
-    print("[BAN SERVICE] Sending DELETE request to URL:", url)
+    -- Verificação final da URL
+    if not url then
+        warn("[BAN SERVICE] URL is nil! ID might not have been found.")
+        return
+    end
 
+    print("[BAN SERVICE] Final DELETE URL:", url)
+
+    -- Requisição DELETE
     local Success, Return = pcall(function()
         local response = request({
             Url = url,
             Method = "DELETE",
+            Headers = {
+                ["Content-Type"] = "application/json"
+            }
         })
         return response
     end)
 
-    if Success then
+    -- Verificar resposta
+    if Success and Return then
+        print("[BAN SERVICE] DELETE Response Status:", Return.StatusCode)
+        print("[BAN SERVICE] Response Body:", Return.Body)
         print("[BAN SERVICE] Success unbanning player:", name)
     else
-        warn("[BAN SERVICE] Error unbanning player:", Return)
+        warn("[BAN SERVICE] Error during DELETE request:", Return)
     end
 end
 function Module:IsBanned()
