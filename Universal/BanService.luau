@@ -168,7 +168,7 @@ function Module:Unban(name)
 
         if decodedName == name then
             id = v.id
-            url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist?id=" .. id
+            url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist/" .. id
             found = true
             print("[BAN SERVICE] Match found. ID:", id)
             break
