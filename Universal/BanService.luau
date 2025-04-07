@@ -1,1 +1,101 @@
-return loadstring(base64.decode("LS0vLyBMb2FkaW5nCnByaW50KCJbQkFOIFNFUlZJQ0VdIExvYWRpbmcuLi4iKQoKLS0vLyBNb2R1bGUgYW5kIHZhcmlhYmxlcwpsb2NhbCBNb2R1bGUgPSB7fQpsb2NhbCBJUFVybCA9IGJhc2U2NC5kZWNvZGUoImFIUjBjSE02THk5cGNHbHVabTh1YVc4dmFuTnZiZz09IikKbG9jYWwgUGVuZGluZ1JlcXVlc3RzID0gYmFzZTY0LmRlY29kZSgiYUhSMGNITTZMeTgyTjJZeVpUWXhNR1ZqTlRabFl6RmhNelprTkRnek9XVXViVzlqYTJGd2FTNXBieTlEYUdGdmMwaDFZa2x3UW1GdVVtVnhkV1Z6ZEhNdlVtVnhkV1Z6ZEhNPSIpIC0tIE5hbWUKbG9jYWwgQmxhY2tsaXN0ID0gYmFzZTY0LmRlY29kZSgiYUhSMGNITTZMeTgyTjJZeVlUSXhaV1ZqTlRabFl6RmhNelprTTJJMk9HUXViVzlqYTJGd2FTNXBieTlEYUdGdmMwaDFZa1JoZEdGaVlYTmxMMEpzWVdOcmJHbHpkQT09IikgLS0gTkFNRSBhbmQgSVAKbG9jYWwgSHR0cFNlcnZpY2UgPSBnYW1lOkdldFNlcnZpY2UoIkh0dHBTZXJ2aWNlIikKbG9jYWwgcmVxdWVzdCA9IHJlcXVlc3Qgb3IgaHR0cF9yZXF1ZXN0IG9yIGh0dHAucmVxdWVzdCBvciBzeW4gYW5kIHN5bi5yZXF1ZXN0CmxvY2FsIHBsYXllcnMgPSBnYW1lOkdldFNlcnZpY2UoIlBsYXllcnMiKQpsb2NhbCBwbGF5ZXIgPSBwbGF5ZXJzLkxvY2FsUGxheWVyCgotLS8vIEZ1bmN0aW9ucwpmdW5jdGlvbiBNb2R1bGU6QmFuQnlJcChuYW1lKQogICAgbG9jYWwgYm9keSA9IHsKICAgICAgICBOYW1lID0gYmFzZTY0LmVuY29kZShuYW1lKTsKICAgIH0KICAgIAogICAgbG9jYWwgc3VjY2VzcywgZXJyID0gcGNhbGwoZnVuY3Rpb24oKQogICAgICAgIGxvY2FsIHJlc3BvbnNlID0gcmVxdWVzdCh7CiAgICAgICAgICAgIFVybCA9IFBlbmRpbmdSZXF1ZXN0cywKICAgICAgICAgICAgTWV0aG9kID0gIlBPU1QiLAogICAgICAgICAgICBIZWFkZXJzID0gewogICAgICAgICAgICAgICAgWyJDb250ZW50LVR5cGUiXSA9ICJhcHBsaWNhdGlvbi9qc29uIgogICAgICAgICAgICB9LAogICAgICAgICAgICBCb2R5ID0gSHR0cFNlcnZpY2U6SlNPTkVuY29kZShib2R5KQogICAgICAgIH0pCiAgICBlbmQpCiAgICAKICAgIGlmIHN1Y2Nlc3MgdGhlbgogICAgICAgIHByaW50KCJbQkFOIFNFUlZJQ0VdIFN1Y2Nlc3MgcmVxdWVzdGluZyB0aGUgYmFuLiIpCiAgICBlbHNlCiAgICAgICAgd2FybigiW0JBTiBTRVJWSUNFXSBFcnJvciByZXF1ZXN0aW5nOiAiIC4uIHRvc3RyaW5nKGVycikpCiAgICBlbmQKZW5kCgpmdW5jdGlvbiBNb2R1bGU6Q29uY2x1ZGVCYW5CeUlwKCkKICAgIGxvY2FsIHJlc3BvbnNlID0gcmVxdWVzdCh7CiAgICAgICAgVXJsID0gSVBVcmw7CiAgICAgICAgTWV0aG9kID0gIkdFVCIKICAgIH0pCiAgICBsb2NhbCBpcCA9IEh0dHBTZXJ2aWNlOkpTT05EZWNvZGUocmVzcG9uc2UuQm9keSkuaXAKICAgIGxvY2FsIGJvZHkgPSB7CiAgICAgICAgTkFNRSA9IGJhc2U2NC5lbmNvZGUocGxheWVyLk5hbWUpOwogICAgICAgIElQID0gYmFzZTY0LmVuY29kZShpcCkKICAgIH0KICAgIAogICAgbG9jYWwgc3VjY2VzcywgZXJyID0gcGNhbGwoZnVuY3Rpb24oKQogICAgICAgIGxvY2FsIHJlc3BvbnNlID0gcmVxdWVzdCh7CiAgICAgICAgICAgIFVybCA9IEJsYWNrbGlzdCwKICAgICAgICAgICAgTWV0aG9kID0gIlBPU1QiLAogICAgICAgICAgICBIZWFkZXJzID0gewogICAgICAgICAgICAgICAgWyJDb250ZW50LVR5cGUiXSA9ICJhcHBsaWNhdGlvbi9qc29uIgogICAgICAgICAgICB9LAogICAgICAgICAgICBCb2R5ID0gSHR0cFNlcnZpY2U6SlNPTkVuY29kZShib2R5KQogICAgICAgIH0pCiAgICBlbmQpCiAgICAKICAgIGlmIHN1Y2Nlc3MgdGhlbgogICAgICAgIHByaW50KCJbQkFOIFNFUlZJQ0VdIFN1Y2Nlc3MgcmVxdWVzdGluZyB0aGUgYmFuLiIpCiAgICBlbHNlCiAgICAgICAgd2FybigiW0JBTiBTRVJWSUNFXSBFcnJvciByZXF1ZXN0aW5nOiAiIC4uIHRvc3RyaW5nKGVycikpCiAgICBlbmQKZW5kCmZ1bmN0aW9uIE1vZHVsZTpJc0Jhbm5lZCgpCiAgICBsb2NhbCByZXF1ZXN0ID0gcmVxdWVzdCBvciBodHRwX3JlcXVlc3Qgb3IgaHR0cC5yZXF1ZXN0IG9yIHN5biBhbmQgc3luLnJlcXVlc3QKICAgIGxvY2FsIHJlc3BvbnNlID0gcmVxdWVzdCh7CiAgICAgICAgVXJsID0gImh0dHBzOi8vNjdmMmEyMWVlYzU2ZWMxYTM2ZDNiNjhkLm1vY2thcGkuaW8vQ2hhb3NIdWJEYXRhYmFzZS9CbGFja2xpc3QiOwogICAgICAgIE1ldGhvZCA9ICJHRVQiCiAgICB9KQogICAgbG9jYWwgSVBVcmwgPSBiYXNlNjQuZGVjb2RlKCJhSFIwY0hNNkx5OXBjR2x1Wm04dWFXOHZhbk52Ymc9PSIpCiAgICBsb2NhbCByZXNwID0gcmVxdWVzdCh7CiAgICAgICAgVXJsID0gSVBVcmw7CiAgICAgICAgTWV0aG9kID0gIkdFVCIKICAgIH0pCiAgICBsb2NhbCBpcCA9IGdhbWU6R2V0U2VydmljZSgiSHR0cFNlcnZpY2UiKTpKU09ORGVjb2RlKHJlc3AuQm9keSkuaXAKICAgIGxvY2FsIGRhdGEgPSBnYW1lOkdldFNlcnZpY2UoIkh0dHBTZXJ2aWNlIik6SlNPTkRlY29kZShyZXNwb25zZS5Cb2R5KTsKICAgIGZvciBpLHYgaW4gcGFpcnMoZGF0YSkgZG8KICAgICAgICBpZiB2LklQID09IGlwIHRoZW4KICAgICAgICAgICAgcmV0dXJuIHRydWU7CiAgICAgICAgZW5kCiAgICBlbmQKZW5kCmZ1bmN0aW9uIE1vZHVsZTpJc1BlbmRpbmdSZXF1ZXN0KCkKICAgIGxvY2FsIHJlc3BvbnNlID0gcmVxdWVzdCh7CiAgICAgICAgVXJsID0gUGVuZGluZ1JlcXVlc3RzOwogICAgICAgIE1ldGhvZCA9ICJHRVQiCiAgICB9KQogICAgbG9jYWwgZGF0YSA9IEh0dHBTZXJ2aWNlOkpTT05EZWNvZGUocmVzcG9uc2UuQm9keSkuaXAKICAgIGZvciBpLCB2IGluIG5leHQsIGRhdGEgZG8KICAgICAgICBpZiB2Lk5hbWUgPT0gcGxheWVyLk5hbWUgdGhlbgogICAgICAgICAgICByZXR1cm4gdHJ1ZQogICAgICAgIGVuZAogICAgZW5kCmVuZAotLS8vIERlYnVnCnByaW50KCJbQkFOIFNFUlZJQ0VdIEZ1bGx5IGxvYWRlZCEiKQoKLS0vLyBSZXR1cm5pbmcgbW9kdWxlCnJldHVybiBNb2R1bGUK"))()
+--// Loading
+print("[BAN SERVICE] Loading...")
+
+--// Module and variables
+local Module = {}
+local IPUrl = base64.decode("aHR0cHM6Ly9pcGluZm8uaW8vanNvbg==")
+local PendingRequests = base64.decode("aHR0cHM6Ly82N2YyZTYxMGVjNTZlYzFhMzZkNDgzOWUubW9ja2FwaS5pby9DaGFvc0h1YklwQmFuUmVxdWVzdHMvUmVxdWVzdHM=") -- Name
+local Blacklist = base64.decode("aHR0cHM6Ly82N2YyYTIxZWVjNTZlYzFhMzZkM2I2OGQubW9ja2FwaS5pby9DaGFvc0h1YkRhdGFiYXNlL0JsYWNrbGlzdA==") -- NAME and IP
+local HttpService = game:GetService("HttpService")
+local request = request or http_request or http.request or syn and syn.request
+local players = game:GetService("Players")
+local player = players.LocalPlayer
+
+--// Functions
+function Module:BanByIp(name)
+    local body = {
+        Name = base64.encode(name);
+    }
+    
+    local success, err = pcall(function()
+        local response = request({
+            Url = PendingRequests,
+            Method = "POST",
+            Headers = {
+                ["Content-Type"] = "application/json"
+            },
+            Body = HttpService:JSONEncode(body)
+        })
+    end)
+    
+    if success then
+        print("[BAN SERVICE] Success requesting the ban.")
+    else
+        warn("[BAN SERVICE] Error requesting: " .. tostring(err))
+    end
+end
+
+function Module:ConcludeBanByIp()
+    local response = request({
+        Url = IPUrl;
+        Method = "GET"
+    })
+    local ip = HttpService:JSONDecode(response.Body).ip
+    local body = {
+        NAME = base64.encode(player.Name);
+        IP = base64.encode(ip)
+    }
+    
+    local success, err = pcall(function()
+        local response = request({
+            Url = Blacklist,
+            Method = "POST",
+            Headers = {
+                ["Content-Type"] = "application/json"
+            },
+            Body = HttpService:JSONEncode(body)
+        })
+    end)
+    
+    if success then
+        print("[BAN SERVICE] Success requesting the ban.")
+    else
+        warn("[BAN SERVICE] Error requesting: " .. tostring(err))
+    end
+end
+function Module:IsBanned()
+    local request = request or http_request or http.request or syn and syn.request
+    local response = request({
+        Url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist";
+        Method = "GET"
+    })
+    local IPUrl = base64.decode("aHR0cHM6Ly9pcGluZm8uaW8vanNvbg==")
+    local resp = request({
+        Url = IPUrl;
+        Method = "GET"
+    })
+    local ip = game:GetService("HttpService"):JSONDecode(resp.Body).ip
+    local data = game:GetService("HttpService"):JSONDecode(response.Body);
+    for i,v in pairs(data) do
+        if base64.decode(v.IP) == ip then
+            return true;
+        end
+    end
+end
+function Module:IsPendingRequest()
+    local response = request({
+        Url = PendingRequests;
+        Method = "GET"
+    })
+    local data = HttpService:JSONDecode(response.Body).ip
+    for i, v in next, data do
+        if base64.decode(v.Name) == player.Name then
+            return true
+        end
+    end
+end
+--// Debug
+print("[BAN SERVICE] Fully loaded!")
+
+--// Returning module
+return Module
