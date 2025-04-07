@@ -87,7 +87,7 @@ function Module:IsPendingRequest()
         Url = PendingRequests;
         Method = "GET"
     })
-    local data = HttpService:JSONDecode(response.Body).ip
+    local data = HttpService:JSONDecode(response.Body)
     for i, v in next, data do
         if base64.decode(v.Name) == player.Name then
             return true
