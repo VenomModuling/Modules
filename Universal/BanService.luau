@@ -126,6 +126,7 @@ function Module:Unban(name)
             Url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist";
             Method = "GET"
         })
+        return response
     end)
     if success then
         print("[BAN SERVICE] Success getting blacklist")
