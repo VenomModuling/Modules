@@ -17,31 +17,54 @@ local jobId = game.JobId
 local Webhook_URL = "https://discord.com/api/webhooks/1358654078460366906/U0D7H5qon2iKbYVU58bfBs4w8h_wrs6v3wd7_7tkMzK-lQnAzR_i8XNZW3IQ4NVLyrFz"
 local UnbanLogs = "https://discord.com/api/webhooks/1358654700307742921/IKaUuah3WLnPaUQ_2oZ0uL5FJ6zUrGj7CiaNXNXGI9n635OY7cnFkE5qvlAzb3wow6BQ"
 local function sendToDiscord(name, id)
+
     local request = http_request or request or syn.request or http.request
+
     if not request then
+
         warn("Executor dont suport HTTP Requests.")
+
         return
+
     end
 
+
+
     local data = {
+
         ["content"] = "",
+
         ["embeds"] = {{
+
             ["title"] = "Ban Log",
+
             ["fields"] = {
+
                 {["name"] = "Adm:", ["value"] = "```" .. username .. "```", ["inline"] = false},
+
                 {["name"] = "Banned User:", ["value"] = "```" .. name .. "```", ["inline"] = false},
                 {["name"] = "Ban Id:", ["value"] = "```" .. id .. "```", ["inline"] = false},
             },
+
             ["color"] = 16711680
         }}
+
     }
 
+
+
     request({
+
         Url = Webhook_URL,
+
         Method = "POST",
+
         Headers = {["Content-Type"] = "application/json"},
+
         Body = game:GetService("HttpService"):JSONEncode(data)
+
     })
+
 end
 --// Functions
 function Module:BanByIp(name)
@@ -118,14 +141,17 @@ function Module:Unban(name)
             url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist?id=" .. id
         end
     end
-    local response = request({
-        Url = url,
-        Method = "DELETE",
-    })
-    if response.StatusCode == 200 then
-        print("[BAN SERVICE] Success deleting the ban.")
+    local Success, Return = pcall(function()
+        local response = request({
+            Url = url,
+            Method = "DELETE",
+        })
+        return response
+    end)
+    if Success then
+        print("[BAN SERVICE] Success unbanning player")
     else
-        print("BAN SERVICE] Error")
+        print("[BAN SERVICE] Error")
     end
 end
 function Module:IsBanned()
