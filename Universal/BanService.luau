@@ -121,27 +121,67 @@ function Module:ConcludeBanByIp()
     end
 end
 function Module:Unban(name)
+    print("[BAN SERVICE] Unban started for:", name)
+
     local success, resp = pcall(function()
         local response = request({
-            Url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist";
+            Url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist",
             Method = "GET"
         })
         return response
     end)
-    if success then
+
+    if success and resp and resp.Body then
         print("[BAN SERVICE] Success getting blacklist")
     else
-        warn("[BAN SERVICE] Error: couldnt get the blacklist.")
+        warn("[BAN SERVICE] Error: couldn't get the blacklist.")
+        warn("[BAN SERVICE] Response:", resp)
         return
     end
+
+    local decodedData
+    local successDecode, decodeError = pcall(function()
+        decodedData = HttpService:JSONDecode(resp.Body)
+    end)
+
+    if not successDecode then
+        warn("[BAN SERVICE] Failed to decode JSON:", decodeError)
+        return
+    end
+
     local id
     local url
-    for i, v in pairs(HttpService:JSONDecode(resp.Body)) do
-        if base64.decode(v.NAME) == name then
+    local found = false
+
+    for i, v in pairs(decodedData) do
+        local decodedName
+        local ok, err = pcall(function()
+            decodedName = base64.decode(v.NAME)
+        end)
+
+        if not ok then
+            warn("[BAN SERVICE] Failed to decode base64 name at index", i, "Error:", err)
+            continue
+        end
+
+        print("[BAN SERVICE] Checking name:", decodedName)
+
+        if decodedName == name then
             id = v.id
             url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist?id=" .. id
+            found = true
+            print("[BAN SERVICE] Match found. ID:", id)
+            break
         end
     end
+
+    if not found then
+        warn("[BAN SERVICE] Name not found in blacklist:", name)
+        return
+    end
+
+    print("[BAN SERVICE] Sending DELETE request to URL:", url)
+
     local Success, Return = pcall(function()
         local response = request({
             Url = url,
@@ -149,10 +189,11 @@ function Module:Unban(name)
         })
         return response
     end)
+
     if Success then
-        print("[BAN SERVICE] Success unbanning player")
+        print("[BAN SERVICE] Success unbanning player:", name)
     else
-        print("[BAN SERVICE] Error")
+        warn("[BAN SERVICE] Error unbanning player:", Return)
     end
 end
 function Module:IsBanned()
