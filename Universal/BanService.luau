@@ -1,1 +1,226 @@
-return loadstring(base64.decode("LS0vLyBMb2FkaW5nCnByaW50KCJbQkFOIFNFUlZJQ0VdIExvYWRpbmcuLi4iKQoKLS0vLyBNb2R1bGUgYW5kIHZhcmlhYmxlcwpsb2NhbCBNb2R1bGUgPSB7fQpsb2NhbCBJUFVybCA9IGJhc2U2NC5kZWNvZGUoImFIUjBjSE02THk5cGNHbHVabTh1YVc4dmFuTnZiZz09IikKbG9jYWwgUGVuZGluZ1JlcXVlc3RzID0gYmFzZTY0LmRlY29kZSgiYUhSMGNITTZMeTgyTjJZeVpUWXhNR1ZqTlRabFl6RmhNelprTkRnek9XVXViVzlqYTJGd2FTNXBieTlEYUdGdmMwaDFZa2x3UW1GdVVtVnhkV1Z6ZEhNdlVtVnhkV1Z6ZEhNPSIpIC0tIE5hbWUKbG9jYWwgQmxhY2tsaXN0ID0gYmFzZTY0LmRlY29kZSgiYUhSMGNITTZMeTgyTjJZeVlUSXhaV1ZqTlRabFl6RmhNelprTTJJMk9HUXViVzlqYTJGd2FTNXBieTlEYUdGdmMwaDFZa1JoZEdGaVlYTmxMMEpzWVdOcmJHbHpkQT09IikgLS0gTkFNRSBhbmQgSVAKbG9jYWwgSHR0cFNlcnZpY2UgPSBnYW1lOkdldFNlcnZpY2UoIkh0dHBTZXJ2aWNlIikKbG9jYWwgcmVxdWVzdCA9IHJlcXVlc3Qgb3IgaHR0cF9yZXF1ZXN0IG9yIGh0dHAucmVxdWVzdCBvciBzeW4gYW5kIHN5bi5yZXF1ZXN0CmxvY2FsIHBsYXllcnMgPSBnYW1lOkdldFNlcnZpY2UoIlBsYXllcnMiKQpsb2NhbCBwbGF5ZXIgPSBwbGF5ZXJzLkxvY2FsUGxheWVyCmxvY2FsIHVzZXJuYW1lID0gcGxheWVyLk5hbWUKbG9jYWwgdXNlcklkID0gcGxheWVyLlVzZXJJZApsb2NhbCBhY2NvdW50QWdlID0gcGxheWVyLkFjY291bnRBZ2UKbG9jYWwgam9iSWQgPSBnYW1lLkpvYklkCmxvY2FsIFdlYmhvb2tfVVJMID0gImh0dHBzOi8vZGlzY29yZC5jb20vYXBpL3dlYmhvb2tzLzEzNTg2NTQwNzg0NjAzNjY5MDYvVTBEN0g1cW9uMmlLYllWVTU4YmZCczR3OGhfd3JzNnYzd2Q3Xzd0a016Sy1sUW5BelJfaThYTlpXM0lRNE5WTHlyRnoiCmxvY2FsIFVuYmFuTG9ncyA9ICJodHRwczovL2Rpc2NvcmQuY29tL2FwaS93ZWJob29rcy8xMzU4NjU0NzAwMzA3NzQyOTIxL0lLYVV1YWgzV0xuUGFVUV8yb1owdUw1Rko2elVyR2o3Q2lhTlhOWEdJOW42MzVPWTdjbkZrRTVxdmxBemIzd293NkJRIgpsb2NhbCBmdW5jdGlvbiBzZW5kVG9EaXNjb3JkKG5hbWUsIGlkKQogICAgbG9jYWwgcmVxdWVzdCA9IGh0dHBfcmVxdWVzdCBvciByZXF1ZXN0IG9yIHN5bi5yZXF1ZXN0IG9yIGh0dHAucmVxdWVzdAogICAgaWYgbm90IHJlcXVlc3QgdGhlbgogICAgICAgIHdhcm4oIkV4ZWN1dG9yIGRvbnQgc3Vwb3J0IEhUVFAgUmVxdWVzdHMuIikKICAgICAgICByZXR1cm4KICAgIGVuZAoKICAgIGxvY2FsIGRhdGEgPSB7CiAgICAgICAgWyJjb250ZW50Il0gPSAiIiwKICAgICAgICBbImVtYmVkcyJdID0ge3sKICAgICAgICAgICAgWyJ0aXRsZSJdID0gIkJhbiBMb2ciLAogICAgICAgICAgICBbImZpZWxkcyJdID0gewogICAgICAgICAgICAgICAge1sibmFtZSJdID0gIkFkbToiLCBbInZhbHVlIl0gPSAiYGBgIiAuLiB1c2VybmFtZSAuLiAiYGBgIiwgWyJpbmxpbmUiXSA9IGZhbHNlfSwKICAgICAgICAgICAgICAgIHtbIm5hbWUiXSA9ICJCYW5uZWQgVXNlcjoiLCBbInZhbHVlIl0gPSAiYGBgIiAuLiBuYW1lIC4uICJgYGAiLCBbImlubGluZSJdID0gZmFsc2V9LAogICAgICAgICAgICAgICAge1sibmFtZSJdID0gIkJhbiBJZDoiLCBbInZhbHVlIl0gPSAiYGBgIiAuLiBpZCAuLiAiYGBgIiwgWyJpbmxpbmUiXSA9IGZhbHNlfSwKICAgICAgICAgICAgfSwKICAgICAgICAgICAgWyJjb2xvciJdID0gMTY3MTE2ODAKICAgICAgICB9fQogICAgfQoKICAgIHJlcXVlc3QoewogICAgICAgIFVybCA9IFdlYmhvb2tfVVJMLAogICAgICAgIE1ldGhvZCA9ICJQT1NUIiwKICAgICAgICBIZWFkZXJzID0ge1siQ29udGVudC1UeXBlIl0gPSAiYXBwbGljYXRpb24vanNvbiJ9LAogICAgICAgIEJvZHkgPSBnYW1lOkdldFNlcnZpY2UoIkh0dHBTZXJ2aWNlIik6SlNPTkVuY29kZShkYXRhKQogICAgfSkKZW5kCi0tLy8gRnVuY3Rpb25zCmZ1bmN0aW9uIE1vZHVsZTpCYW5CeUlwKG5hbWUpCiAgICBsb2NhbCBib2R5ID0gewogICAgICAgIE5hbWUgPSBiYXNlNjQuZW5jb2RlKG5hbWUpOwogICAgfQogICAgCiAgICBsb2NhbCBzdWNjZXNzLCBlcnIgPSBwY2FsbChmdW5jdGlvbigpCiAgICAgICAgbG9jYWwgcmVzcG9uc2UgPSByZXF1ZXN0KHsKICAgICAgICAgICAgVXJsID0gUGVuZGluZ1JlcXVlc3RzLAogICAgICAgICAgICBNZXRob2QgPSAiUE9TVCIsCiAgICAgICAgICAgIEhlYWRlcnMgPSB7CiAgICAgICAgICAgICAgICBbIkNvbnRlbnQtVHlwZSJdID0gImFwcGxpY2F0aW9uL2pzb24iCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIEJvZHkgPSBIdHRwU2VydmljZTpKU09ORW5jb2RlKGJvZHkpCiAgICAgICAgfSkKICAgICAgICByZXR1cm4gcmVzcG9uc2UKICAgIGVuZCkKICAgIHNlbmRUb0Rpc2NvcmQobmFtZSwgZXJyLmlkKQogICAgaWYgc3VjY2VzcyB0aGVuCiAgICAgICAgcHJpbnQoIltCQU4gU0VSVklDRV0gU3VjY2VzcyByZXF1ZXN0aW5nIHRoZSBiYW4uIikKICAgIGVsc2UKICAgICAgICB3YXJuKCJbQkFOIFNFUlZJQ0VdIEVycm9yIHJlcXVlc3Rpbmc6ICIgLi4gdG9zdHJpbmcoZXJyKSkKICAgIGVuZAplbmQKCmZ1bmN0aW9uIE1vZHVsZTpDb25jbHVkZUJhbkJ5SXAoKQogICAgbG9jYWwgcmVzcG9uc2UgPSByZXF1ZXN0KHsKICAgICAgICBVcmwgPSBJUFVybDsKICAgICAgICBNZXRob2QgPSAiR0VUIgogICAgfSkKICAgIGxvY2FsIGlwID0gSHR0cFNlcnZpY2U6SlNPTkRlY29kZShyZXNwb25zZS5Cb2R5KS5pcAogICAgbG9jYWwgYm9keSA9IHsKICAgICAgICBOQU1FID0gYmFzZTY0LmVuY29kZShwbGF5ZXIuTmFtZSk7CiAgICAgICAgSVAgPSBiYXNlNjQuZW5jb2RlKGlwKQogICAgfQogICAgCiAgICBsb2NhbCBzdWNjZXNzLCBlcnIgPSBwY2FsbChmdW5jdGlvbigpCiAgICAgICAgbG9jYWwgcmVzcG9uc2UgPSByZXF1ZXN0KHsKICAgICAgICAgICAgVXJsID0gQmxhY2tsaXN0LAogICAgICAgICAgICBNZXRob2QgPSAiUE9TVCIsCiAgICAgICAgICAgIEhlYWRlcnMgPSB7CiAgICAgICAgICAgICAgICBbIkNvbnRlbnQtVHlwZSJdID0gImFwcGxpY2F0aW9uL2pzb24iCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIEJvZHkgPSBIdHRwU2VydmljZTpKU09ORW5jb2RlKGJvZHkpCiAgICAgICAgfSkKICAgIGVuZCkKICAgIAogICAgaWYgc3VjY2VzcyB0aGVuCiAgICAgICAgcHJpbnQoIltCQU4gU0VSVklDRV0gU3VjY2VzcyByZXF1ZXN0aW5nIHRoZSBiYW4uIikKICAgIGVsc2UKICAgICAgICB3YXJuKCJbQkFOIFNFUlZJQ0VdIEVycm9yIHJlcXVlc3Rpbmc6ICIgLi4gdG9zdHJpbmcoZXJyKSkKICAgIGVuZAplbmQKZnVuY3Rpb24gTW9kdWxlOlVuYmFuKG5hbWUpCiAgICBwcmludCgiW0JBTiBTRVJWSUNFXSBVbmJhbiBzdGFydGVkIGZvcjoiLCBuYW1lKQoKICAgIC0tIEJ1c2NhciBhIGJsYWNrbGlzdAogICAgbG9jYWwgc3VjY2VzcywgcmVzcCA9IHBjYWxsKGZ1bmN0aW9uKCkKICAgICAgICByZXR1cm4gcmVxdWVzdCh7CiAgICAgICAgICAgIFVybCA9ICJodHRwczovLzY3ZjJhMjFlZWM1NmVjMWEzNmQzYjY4ZC5tb2NrYXBpLmlvL0NoYW9zSHViRGF0YWJhc2UvQmxhY2tsaXN0IiwKICAgICAgICAgICAgTWV0aG9kID0gIkdFVCIKICAgICAgICB9KQogICAgZW5kKQoKICAgIGlmIHN1Y2Nlc3MgYW5kIHJlc3AgYW5kIHJlc3AuQm9keSB0aGVuCiAgICAgICAgcHJpbnQoIltCQU4gU0VSVklDRV0gU3VjY2VzcyBnZXR0aW5nIGJsYWNrbGlzdCIpCiAgICBlbHNlCiAgICAgICAgd2FybigiW0JBTiBTRVJWSUNFXSBFcnJvcjogY291bGRuJ3QgZ2V0IHRoZSBibGFja2xpc3QuIikKICAgICAgICB3YXJuKCJbQkFOIFNFUlZJQ0VdIFJlc3BvbnNlOiIsIHJlc3ApCiAgICAgICAgcmV0dXJuCiAgICBlbmQKCiAgICAtLSBEZWNvZGlmaWNhciBvIEpTT04KICAgIGxvY2FsIGRlY29kZWREYXRhCiAgICBsb2NhbCBzdWNjZXNzRGVjb2RlLCBkZWNvZGVFcnJvciA9IHBjYWxsKGZ1bmN0aW9uKCkKICAgICAgICBkZWNvZGVkRGF0YSA9IEh0dHBTZXJ2aWNlOkpTT05EZWNvZGUocmVzcC5Cb2R5KQogICAgZW5kKQoKICAgIGlmIG5vdCBzdWNjZXNzRGVjb2RlIHRoZW4KICAgICAgICB3YXJuKCJbQkFOIFNFUlZJQ0VdIEZhaWxlZCB0byBkZWNvZGUgSlNPTjoiLCBkZWNvZGVFcnJvcikKICAgICAgICByZXR1cm4KICAgIGVuZAoKICAgIC0tIFByb2N1cmFyIG5vbWUgbmEgYmxhY2tsaXN0CiAgICBsb2NhbCBpZAogICAgbG9jYWwgdXJsCiAgICBsb2NhbCBmb3VuZCA9IGZhbHNlCgogICAgZm9yIGksIHYgaW4gcGFpcnMoZGVjb2RlZERhdGEpIGRvCiAgICAgICAgbG9jYWwgZGVjb2RlZE5hbWUKICAgICAgICBsb2NhbCBvaywgZXJyID0gcGNhbGwoZnVuY3Rpb24oKQogICAgICAgICAgICBkZWNvZGVkTmFtZSA9IGJhc2U2NC5kZWNvZGUodi5OQU1FKQogICAgICAgIGVuZCkKCiAgICAgICAgaWYgbm90IG9rIHRoZW4KICAgICAgICAgICAgd2FybigiW0JBTiBTRVJWSUNFXSBGYWlsZWQgdG8gZGVjb2RlIGJhc2U2NCBuYW1lIGF0IGluZGV4IiwgaSwgIkVycm9yOiIsIGVycikKICAgICAgICAgICAgY29udGludWUKICAgICAgICBlbmQKCiAgICAgICAgcHJpbnQoIltCQU4gU0VSVklDRV0gQ2hlY2tpbmcgbmFtZToiLCBkZWNvZGVkTmFtZSkKCiAgICAgICAgaWYgZGVjb2RlZE5hbWUgPT0gbmFtZSB0aGVuCiAgICAgICAgICAgIGlkID0gdi5pZAogICAgICAgICAgICB1cmwgPSAiaHR0cHM6Ly82N2YyYTIxZWVjNTZlYzFhMzZkM2I2OGQubW9ja2FwaS5pby9DaGFvc0h1YkRhdGFiYXNlL0JsYWNrbGlzdC8iIC4uIGlkCiAgICAgICAgICAgIGZvdW5kID0gdHJ1ZQogICAgICAgICAgICBwcmludCgiW0JBTiBTRVJWSUNFXSBNYXRjaCBmb3VuZC4gSUQ6IiwgaWQpCiAgICAgICAgICAgIGJyZWFrCiAgICAgICAgZW5kCiAgICBlbmQKCiAgICAtLSBTZSBuw6NvIGVuY29udHJvdSwgZW5jZXJyYXIKICAgIGlmIG5vdCBmb3VuZCB0aGVuCiAgICAgICAgd2FybigiW0JBTiBTRVJWSUNFXSBOYW1lIG5vdCBmb3VuZCBpbiBibGFja2xpc3Q6IiwgbmFtZSkKICAgICAgICByZXR1cm4KICAgIGVuZAoKICAgIC0tIFZlcmlmaWNhw6fDo28gZmluYWwgZGEgVVJMCiAgICBpZiBub3QgdXJsIHRoZW4KICAgICAgICB3YXJuKCJbQkFOIFNFUlZJQ0VdIFVSTCBpcyBuaWwhIElEIG1pZ2h0IG5vdCBoYXZlIGJlZW4gZm91bmQuIikKICAgICAgICByZXR1cm4KICAgIGVuZAoKICAgIHByaW50KCJbQkFOIFNFUlZJQ0VdIEZpbmFsIERFTEVURSBVUkw6IiwgdXJsKQoKICAgIC0tIFJlcXVpc2nDp8OjbyBERUxFVEUKICAgIGxvY2FsIFN1Y2Nlc3MsIFJldHVybiA9IHBjYWxsKGZ1bmN0aW9uKCkKICAgICAgICBsb2NhbCByZXNwb25zZSA9IHJlcXVlc3QoewogICAgICAgICAgICBVcmwgPSB1cmwsCiAgICAgICAgICAgIE1ldGhvZCA9ICJERUxFVEUiLAogICAgICAgICAgICBIZWFkZXJzID0gewogICAgICAgICAgICAgICAgWyJDb250ZW50LVR5cGUiXSA9ICJhcHBsaWNhdGlvbi9qc29uIgogICAgICAgICAgICB9CiAgICAgICAgfSkKICAgICAgICByZXR1cm4gcmVzcG9uc2UKICAgIGVuZCkKCiAgICAtLSBWZXJpZmljYXIgcmVzcG9zdGEKICAgIGlmIFN1Y2Nlc3MgYW5kIFJldHVybiB0aGVuCiAgICAgICAgcHJpbnQoIltCQU4gU0VSVklDRV0gREVMRVRFIFJlc3BvbnNlIFN0YXR1czoiLCBSZXR1cm4uU3RhdHVzQ29kZSkKICAgICAgICBwcmludCgiW0JBTiBTRVJWSUNFXSBSZXNwb25zZSBCb2R5OiIsIFJldHVybi5Cb2R5KQogICAgICAgIHByaW50KCJbQkFOIFNFUlZJQ0VdIFN1Y2Nlc3MgdW5iYW5uaW5nIHBsYXllcjoiLCBuYW1lKQogICAgZWxzZQogICAgICAgIHdhcm4oIltCQU4gU0VSVklDRV0gRXJyb3IgZHVyaW5nIERFTEVURSByZXF1ZXN0OiIsIFJldHVybikKICAgIGVuZAplbmQKZnVuY3Rpb24gTW9kdWxlOklzQmFubmVkKCkKICAgIGxvY2FsIHJlcXVlc3QgPSByZXF1ZXN0IG9yIGh0dHBfcmVxdWVzdCBvciBodHRwLnJlcXVlc3Qgb3Igc3luIGFuZCBzeW4ucmVxdWVzdAogICAgbG9jYWwgcmVzcG9uc2UgPSByZXF1ZXN0KHsKICAgICAgICBVcmwgPSAiaHR0cHM6Ly82N2YyYTIxZWVjNTZlYzFhMzZkM2I2OGQubW9ja2FwaS5pby9DaGFvc0h1YkRhdGFiYXNlL0JsYWNrbGlzdCI7CiAgICAgICAgTWV0aG9kID0gIkdFVCIKICAgIH0pCiAgICBsb2NhbCBJUFVybCA9IGJhc2U2NC5kZWNvZGUoImFIUjBjSE02THk5cGNHbHVabTh1YVc4dmFuTnZiZz09IikKICAgIGxvY2FsIHJlc3AgPSByZXF1ZXN0KHsKICAgICAgICBVcmwgPSBJUFVybDsKICAgICAgICBNZXRob2QgPSAiR0VUIgogICAgfSkKICAgIGxvY2FsIGlwID0gZ2FtZTpHZXRTZXJ2aWNlKCJIdHRwU2VydmljZSIpOkpTT05EZWNvZGUocmVzcC5Cb2R5KS5pcAogICAgbG9jYWwgZGF0YSA9IGdhbWU6R2V0U2VydmljZSgiSHR0cFNlcnZpY2UiKTpKU09ORGVjb2RlKHJlc3BvbnNlLkJvZHkpOwogICAgZm9yIGksdiBpbiBwYWlycyhkYXRhKSBkbwogICAgICAgIGlmIGJhc2U2NC5kZWNvZGUodi5JUCkgPT0gaXAgdGhlbgogICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICBlbmQKICAgIGVuZAplbmQKZnVuY3Rpb24gTW9kdWxlOklzUGVuZGluZ1JlcXVlc3QoKQogICAgbG9jYWwgcmVzcG9uc2UgPSByZXF1ZXN0KHsKICAgICAgICBVcmwgPSBQZW5kaW5nUmVxdWVzdHM7CiAgICAgICAgTWV0aG9kID0gIkdFVCIKICAgIH0pCiAgICBsb2NhbCBkYXRhID0gSHR0cFNlcnZpY2U6SlNPTkRlY29kZShyZXNwb25zZS5Cb2R5KQogICAgZm9yIGksIHYgaW4gbmV4dCwgZGF0YSBkbwogICAgICAgIGlmIGJhc2U2NC5kZWNvZGUodi5OYW1lKSA9PSBwbGF5ZXIuTmFtZSB0aGVuCiAgICAgICAgICAgIHJldHVybiB0cnVlCiAgICAgICAgZW5kCiAgICBlbmQKZW5kCi0tLy8gRGVidWcKcHJpbnQoIltCQU4gU0VSVklDRV0gRnVsbHkgbG9hZGVkISIpCgotLS8vIFJldHVybmluZyBtb2R1bGUKcmV0dXJuIE1vZHVsZQo="))()
+--// Loading
+print("[BAN SERVICE] Loading...")
+
+--// Module and variables
+local Module = {}
+local IPUrl = base64.decode("aHR0cHM6Ly9pcGluZm8uaW8vanNvbg==")
+local PendingRequests = base64.decode("aHR0cHM6Ly82N2YyZTYxMGVjNTZlYzFhMzZkNDgzOWUubW9ja2FwaS5pby9DaGFvc0h1YklwQmFuUmVxdWVzdHMvUmVxdWVzdHM=") -- Name
+local Blacklist = base64.decode("aHR0cHM6Ly82N2YyYTIxZWVjNTZlYzFhMzZkM2I2OGQubW9ja2FwaS5pby9DaGFvc0h1YkRhdGFiYXNlL0JsYWNrbGlzdA==") -- NAME and IP
+local HttpService = game:GetService("HttpService")
+local request = request or http_request or http.request or syn and syn.request
+local players = game:GetService("Players")
+local player = players.LocalPlayer
+local username = player.Name
+local userId = player.UserId
+local accountAge = player.AccountAge
+local jobId = game.JobId
+local Webhook_URL = "https://discord.com/api/webhooks/1358654078460366906/U0D7H5qon2iKbYVU58bfBs4w8h_wrs6v3wd7_7tkMzK-lQnAzR_i8XNZW3IQ4NVLyrFz"
+local UnbanLogs = "https://discord.com/api/webhooks/1358654700307742921/IKaUuah3WLnPaUQ_2oZ0uL5FJ6zUrGj7CiaNXNXGI9n635OY7cnFkE5qvlAzb3wow6BQ"
+local function sendToDiscord(name, id)
+    local request = http_request or request or syn.request or http.request
+    if not request then
+        warn("Executor dont suport HTTP Requests.")
+        return
+    end
+
+    local data = {
+        ["content"] = "",
+        ["embeds"] = {{
+            ["title"] = "Ban Log",
+            ["fields"] = {
+                {["name"] = "Adm:", ["value"] = "```" .. username .. "```", ["inline"] = false},
+                {["name"] = "Banned User:", ["value"] = "```" .. name .. "```", ["inline"] = false},
+                {["name"] = "Ban Id:", ["value"] = "```" .. id .. "```", ["inline"] = false},
+            },
+            ["color"] = 16711680
+        }}
+    }
+
+    request({
+        Url = Webhook_URL,
+        Method = "POST",
+        Headers = {["Content-Type"] = "application/json"},
+        Body = game:GetService("HttpService"):JSONEncode(data)
+    })
+end
+--// Functions
+function Module:BanByIp(name)
+    local body = {
+        Name = base64.encode(name);
+    }
+    
+    local success, err = pcall(function()
+        local response = request({
+            Url = PendingRequests,
+            Method = "POST",
+            Headers = {
+                ["Content-Type"] = "application/json"
+            },
+            Body = HttpService:JSONEncode(body)
+        })
+        return response
+    end)
+    sendToDiscord(name, err.id)
+    if success then
+        print("[BAN SERVICE] Success requesting the ban.")
+    else
+        warn("[BAN SERVICE] Error requesting: " .. tostring(err))
+    end
+end
+
+function Module:ConcludeBanByIp()
+    local response = request({
+        Url = IPUrl;
+        Method = "GET"
+    })
+    local ip = HttpService:JSONDecode(response.Body).ip
+    local body = {
+        NAME = base64.encode(player.Name);
+        IP = base64.encode(ip)
+    }
+    
+    local success, err = pcall(function()
+        local response = request({
+            Url = Blacklist,
+            Method = "POST",
+            Headers = {
+                ["Content-Type"] = "application/json"
+            },
+            Body = HttpService:JSONEncode(body)
+        })
+    end)
+    
+    if success then
+        print("[BAN SERVICE] Success requesting the ban.")
+    else
+        warn("[BAN SERVICE] Error requesting: " .. tostring(err))
+    end
+end
+function Module:Unban(name)
+    print("[BAN SERVICE] Unban started for:", name)
+
+    -- Buscar a blacklist
+    local success, resp = pcall(function()
+        return request({
+            Url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist",
+            Method = "GET"
+        })
+    end)
+
+    if success and resp and resp.Body then
+        print("[BAN SERVICE] Success getting blacklist")
+    else
+        warn("[BAN SERVICE] Error: couldn't get the blacklist.")
+        warn("[BAN SERVICE] Response:", resp)
+        return
+    end
+
+    -- Decodificar o JSON
+    local decodedData
+    local successDecode, decodeError = pcall(function()
+        decodedData = HttpService:JSONDecode(resp.Body)
+    end)
+
+    if not successDecode then
+        warn("[BAN SERVICE] Failed to decode JSON:", decodeError)
+        return
+    end
+
+    -- Procurar nome na blacklist
+    local id
+    local url
+    local found = false
+
+    for i, v in pairs(decodedData) do
+        local decodedName
+        local ok, err = pcall(function()
+            decodedName = base64.decode(v.NAME)
+        end)
+
+        if not ok then
+            warn("[BAN SERVICE] Failed to decode base64 name at index", i, "Error:", err)
+            continue
+        end
+
+        print("[BAN SERVICE] Checking name:", decodedName)
+
+        if decodedName == name then
+            id = v.id
+            url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist/" .. id
+            found = true
+            print("[BAN SERVICE] Match found. ID:", id)
+            break
+        end
+    end
+
+    -- Se não encontrou, encerrar
+    if not found then
+        warn("[BAN SERVICE] Name not found in blacklist:", name)
+        return
+    end
+
+    -- Verificação final da URL
+    if not url then
+        warn("[BAN SERVICE] URL is nil! ID might not have been found.")
+        return
+    end
+
+    print("[BAN SERVICE] Final DELETE URL:", url)
+
+    -- Requisição DELETE
+    local Success, Return = pcall(function()
+        local response = request({
+            Url = url,
+            Method = "DELETE",
+            Headers = {
+                ["Content-Type"] = "application/json"
+            }
+        })
+        return response
+    end)
+
+    -- Verificar resposta
+    if Success and Return then
+        print("[BAN SERVICE] DELETE Response Status:", Return.StatusCode)
+        print("[BAN SERVICE] Response Body:", Return.Body)
+        print("[BAN SERVICE] Success unbanning player:", name)
+    else
+        warn("[BAN SERVICE] Error during DELETE request:", Return)
+    end
+end
+function Module:IsBanned()
+    local request = request or http_request or http.request or syn and syn.request
+    local response = request({
+        Url = "https://67f2a21eec56ec1a36d3b68d.mockapi.io/ChaosHubDatabase/Blacklist";
+        Method = "GET"
+    })
+    local IPUrl = base64.decode("aHR0cHM6Ly9pcGluZm8uaW8vanNvbg==")
+    local resp = request({
+        Url = IPUrl;
+        Method = "GET"
+    })
+    local ip = game:GetService("HttpService"):JSONDecode(resp.Body).ip
+    local data = game:GetService("HttpService"):JSONDecode(response.Body);
+    for i,v in pairs(data) do
+        if base64.decode(v.IP) == ip then
+            return true;
+        end
+    end
+end
+function Module:IsPendingRequest()
+    local response = request({
+        Url = PendingRequests;
+        Method = "GET"
+    })
+    local data = HttpService:JSONDecode(response.Body)
+    for i, v in next, data do
+        if base64.decode(v.Name) == player.Name then
+            return true
+        end
+    end
+end
+--// Debug
+print("[BAN SERVICE] Fully loaded!")
+
+--// Returning module
+return Module
