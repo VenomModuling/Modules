@@ -1945,18 +1945,31 @@ function redzlib:MakeWindow(Configs)
 			return Paragraph
 		end
 function Tab:CreateImageLabel(Configs)
-	local props = Configs.Props or {}
-	local image = Configs.Image or ""
-	local parent = Configs.Parent or self.Section or self.Holder
+function Tab:AddImage(Configs, ...)
+	-- Suporte a uso posicional ou nomeado
+	if type(Configs) ~= "table" then
+		Configs = {}
+	end
 
-	local ImageLabel = InsertTheme(SetProps(Create("ImageLabel", parent, {
-		Image = redzlib:GetIcon(image),
-		Size = UDim2.fromOffset(16, 16),
+	local ImageId = Configs.Image or Configs[1] or ""
+	local Size = Configs.Size or Configs[2] or UDim2.fromOffset(16, 16)
+	local Position = Configs.Position or Configs[3] or nil
+	local Anchor = Configs.AnchorPoint or Configs[4] or Vector2.new(0, 0)
+
+	local Holder = Create("Frame", self.Container, {
+		Size = Size,
 		BackgroundTransparency = 1,
-		ImageColor3 = Theme["Color Text"]
-	}), props), "Text")
+		Position = Position,
+		AnchorPoint = Anchor,
+		Name = "ImageHolder"
+	})
 
-	return ImageLabel
+	local Image = Make("Image", Holder, {
+		Size = UDim2.fromScale(1, 1),
+		Image = ImageId,
+	})
+
+	return Image, Holder
 end
 		function Tab:AddButton(Configs)
 			local BName = Configs[1] or Configs.Name or Configs.Title or "Button!"
